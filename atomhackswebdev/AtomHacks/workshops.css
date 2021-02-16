@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Aleo', serif;
+    color: white;
+}
+
+html{
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+body {
+    position: absolute;
+  width: 100%;
+  height: 100%;
+background: #fff;
+  margin: auto;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+.head h3 {
+  border: 1px solid #000;
+	text-align: center;
+    line-height: 1em;
+    height: 50px;
+  margin-bottom: 30px;
+  padding-top: 28px;
+  background-color: #064409;
+  
+}
+.head2{
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 25px;
+   color:  #064409;
+}
+.col1 {
+position: relative;
+  width: 450px;
+  height: 70%;
+  padding: 10px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  float: left;
+  color:  #064409;
+  
+}
+.content1 h3{
+    text-align: center;
+    color:  #064409;
+    border-bottom: 3px #064409 solid;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.content1 p{
+    text-align: center;
+}
+.col2 {
+    position: relative;
+  width: 450px;
+	height: 70%;
+  padding: 10px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  float: right;
+  color:  #064409;
+}
+.content2 h3{
+    text-align: center;
+    color:  #064409;
+    border-bottom: 3px #064409 solid;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.content2 p{
+    text-align: center;
+}
+.col3{
+    position: absolute;
+    width: 300px;
+	height: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+ left: 40%;
+ color:  #064409;
+}
+.content3 h3{
+    text-align: center;
+    margin-bottom: 150px;
+    border-bottom: 3px #064409 solid;
+    color:  #064409;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.content3 p{
+    text-align: center;
+    font-size: 35px;
+    color:  #064409;
+}
+
+.column {
+    max-width: 800px;
+    margin: 0 auto;
+    column-width: 14em;
+    background-color:#064409;
+  }
+    
+    .center,.front-face,
+    .contents,.back-face{
+      position: absolute;
+    }
+    .center{
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 280px;
+      width: 450px;
+      transform-style: preserve-3d;
+     perspective: 1000px;
+    }
+    .front-face, .back-face{
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    
+      background-size: cover;
+      background-position: center;
+      transform: translateY(0deg);
+      border-radius: 10px;
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+      transition: transform .7s cubic-bezier(.4,.2,.2,1);
+    }
+    .contents{
+      left: 0%;
+      top: 50%;
+      width: 100%;
+      perspective: 1000px;
+      transform: translateY(-50%) translateZ(60px) scale(0.94);
+      
+    }
+    .front p{
+      font-size: 35px;
+      margin-bottom: 15px;
+      color: #064409;
+    }
+    .front span{
+      font-size: 23px;
+      color:  #064409;
+    }
+    .front-face {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      background: #4ECDC4;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+      
+      
+      
+
+    }
+    .front p:after{
+      content: '';
+      display: block;
+      left: 0;
+      right: 0;
+      width: 100px;
+      height: 2px;
+      background: #064409; 
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    .back-face{
+      transform: rotateY(180deg);
+      background-color: #537895;
+background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+      border-radius: 20px;
+    }
+    .back {
+      color: white;
+      padding-bottom: 0px;
+    
+    }
+    .back h2{
+      font-size: 28px;
+      padding-bottom: 15px;
+    }
+    .back span{
+      font-size: 20px;
+   
+  
+    }
+    .icons{
+      margin: 10px 0;
+      display: block;
+    }
+    i.fab{
+      color:  #042f4b;
+      font-size: 20px;
+      height: 40px;
+      width: 40px;
+      background: white;
+      border-radius: 50%;
+      margin: 0 5px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+    .center:hover > .back-face{
+      transform: rotateY(0deg);
+      cursor: pointer;
+    }
+    .center:hover > .front-face{
+      transform: rotateY(-180deg);
+      cursor: pointer;
+    }
+    
+.foot {
+  border: 1px solid #000;
+	line-height: 2em;
+	font-size: 16px;
+	padding: 0 2em;
+  clear: both;
+  background-color: #064409;
+  
+}
