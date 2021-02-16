@@ -1,0 +1,7 @@
+public ArrayList<Double> getWeightChanges(ArrayList<Double>array){
+	ArrayList<Double>arr = new ArrayList<Double>();
+	for(int i = 0; i<array.size()-1; i++){
+		arr.add(array.get(i+1)-array.get(i));
+	}
+	return arr;
+}

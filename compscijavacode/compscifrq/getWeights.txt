@@ -1,0 +1,8 @@
+public ArrayList<Double> getWeights(double w, ArrayList<Double>weightChanges){
+	ArrayList<Double>arr = new ArrayList<Double>();
+	arr.add(w);
+	for(double wC : weightChanges){
+		arr.add(wC + arr.get(arr.size()-1));
+	}
+	return arr;
+}

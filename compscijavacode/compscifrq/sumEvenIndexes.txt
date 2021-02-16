@@ -1,0 +1,7 @@
+public int sumEvenIndexes(ArrayList<Integer>arrList){
+	int sum = 0;
+	for(int i = 0; i<arrList.size(); i+=2){
+		sum+=arrList.get(i);
+	}
+	return sum;
+}

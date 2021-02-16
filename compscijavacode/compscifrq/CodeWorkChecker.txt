@@ -1,0 +1,21 @@
+public class CodeWordChecker implements StringChecker{
+	private int min;
+	private int max;
+	private String exclude;
+
+	public CodeWordChecker(int mn, int mx, String e){
+		min = mn;
+		max = mx;
+		exclude = e;
+	}
+	
+	public CodeWordChecker(String e){
+		min = 6;
+		max = 20;
+		exclude = e;
+	}	
+	
+	public boolean isValid(String str){
+		return str.length() >= min && str.length() <= max && str.indexOf(exclude) == -1;
+	}
+}

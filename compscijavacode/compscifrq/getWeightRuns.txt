@@ -1,0 +1,16 @@
+public ArrayList<Double> getWeightRuns(ArrayList<Double>weights){
+	ArrayList<Double>weightRuns = new ArrayList<Double>();
+	int run = 0;
+	ArrayList<Double>weightChange = getWeightChanges(weights);
+
+	for(int i = 0; i<weightChange.size()-1; i++){
+		if(weightChange.get(i) < 0 && weightChange.get(i+1) > 0) 
+		|| (weightChange.get(i) > 0 && weightChange.get(i+1) < 0)
+		{
+			weightRuns.add(weights.get(i+1) - weights.get(run));
+			run++;
+		}
+	}
+	 							
+	return weightRuns;
+}		

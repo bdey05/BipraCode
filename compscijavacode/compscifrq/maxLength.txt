@@ -1,0 +1,10 @@
+public int maxLength(ArrayList<String>arr){
+    int length = 0;
+    
+    for(int i = 0; i<arr.size(); i++){
+        if(arr.get(i).length() > length){
+           length = arr.get(i).length();
+        }
+    }
+    return length;
+}

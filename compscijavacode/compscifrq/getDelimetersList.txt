@@ -1,0 +1,10 @@
+public ArrayList<String>getDelimetersList(String[]tokens){
+	ArrayList<String>delimeterList = new ArrayList<String>();
+
+	for(int i = 0; tokens.length; i++){
+		if(tokens[i].equals(openDel) || tokens[i].equals(closeDel)){
+			delimeterList.add(tokens[i]);
+		}
+	}
+	return delimeterList;
+}
