@@ -1,0 +1,162 @@
+/*nav{
+  display: flex;
+    position: absolute;
+    width: 100vw;
+
+}
+nav button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    margin: 25px;
+}
+nav button:active{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.nav{
+    width: 100vw;
+height: 85px;
+background-color: red;
+
+}
+.nav a{
+    float: left;
+}
+.navbar{
+    position: relative;
+  display: inline-block;
+
+    
+}
+#btn{
+    background-color: transparent;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    margin: 25px;
+
+    
+
+}
+#btn:active{
+    color: white;
+    background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+#list{
+   
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+#list a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.nav{
+    overflow: hidden;
+}
+.nav a img{
+    width: 225px;
+    height: 85px;
+    object-fit: cover;
+}
+
+/*nav ul li {
+    display:  block;
+    float: left;
+    width: relative;
+}
+
+nav ul li {
+    display: block; 
+    float: none;
+}*/
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown #btn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  
+  
+  #list {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+ #list a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  #list a:hover {
+    background-color: #ddd;
+  }
+  
+  

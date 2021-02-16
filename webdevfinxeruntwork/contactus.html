@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "contactusstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <p><img src="lablogo.jpg" class = "logo"></p>
+        <ul>
+            <li><a href = "#">Research</a>
+                <ul>
+                    <li><a href="">Article Category 1</a></li>
+                    <li><a href="">Article Category 2</a></li>
+                    <li><a href="">Article Category 3</a></li>
+                </ul>
+            </li>
+            <li><a href = "#">About</a></li>
+        </ul>
+        <button href = "#" class = "contact">Contact Us!</button>
+        <form class ="search-form">
+            <input type="text" placeholder="Search">
+            <button class="icon"><i class="fa fa-search"></i></button>
+        </form>
+    </nav>
+    <section class = "contactpage">
+        <div class = "content">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div class = "container">
+            <div class = "contactinfo">
+                <div class = "box">
+                    <div class = "icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class = "text">
+                        <h3>Email</h3>
+                        <p>something@gmail.org</p>
+                    </div>
+                </div>
+                <div class = "box">
+                    <div class = "icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></i></div>
+                    <div class = "text">
+                        <h3>Facebook</h3>
+                        <p>FinxLabs</p>
+                    </div>
+                </div>
+                <div class = "box">
+                    <div class = "icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    <div class = "text">
+                        <h3>Instagram</h3>
+                        <p>FinxLabs</p>
+                    </div>
+                </div>
+
+               
+            </div>
+            <div class = "contactform">
+                <form action = "https://formspree.io/f/meqpzeko" method = POST>
+                    <h2> Send Message</h2>
+                    <div class = "inputBox">
+                        <input type = "text" name = "Full Name" required = "required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class = "inputBox">
+                        <input type = "text" name = "Email Address" required = "required">
+                        <span>Email Address</span>
+                    </div>
+                    <div class = "inputBox">
+                        <textarea required = "required" name = "Message"></textarea>
+                        <span>Write your message</span>
+                    </div>
+                    <div class = "inputBox">
+                        <input type = "submit" value = "Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Contact Us Page-->
+</body>

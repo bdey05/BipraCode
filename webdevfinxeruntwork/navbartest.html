@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbartest.css">
+</head>
+<body>
+    <!--<nav>
+            <button id = "btn">Click me</button>
+            <ul id = "list">
+                <li>Ddadkjasd</li>
+                <li>Dsadadasda</li>
+                <li>Dasdadas</li>
+            </ul>
+            <button>Sasasd</button>
+            <button>Sasasd</button>
+            <button>Sasasd</button>
+            <button>Sasasd</button>
+    </nav>-->
+   <!-- <div class = "nav">
+        <a><img src = "lablogo.jpg"></a>
+        <div><a>Home</a></div>
+    <div class = "navbar">
+        <button id = "btn">Click Me</button>
+        <div id = "list">
+            <a href = #>dasdsadas</a>
+            <a href = #>dasdsadas</a>
+            <a href = #>dasdsadas</a>
+        </div>
+    </div>
+    </div>-->
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+          <button id="btn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="list">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> 
+      </div>
+</body>
+
+<script>
+ 
+const button = document.getElementById("btn");
+const list = document.getElementById("list");
+
+list.style.display = "none";
+
+button.addEventListener("click", (event) =>
+    {
+        if(list.style.display == "none"){
+            list.style.display = "block";
+        }
+        else{
+            list.style.display = "none";
+        }
+    })
+
+</script>
+
+
+
+
+</html>
